@@ -371,5 +371,14 @@
 <script type="text/javascript" src="assets/sticky/jquery.sticky.js"></script>
 <script type="text/javascript" src="js/jquery.wp.custom.js"></script>
 <script type="text/javascript" src="js/jquery.wp.switcher.js"></script>
+<script>
+     $(function(){
+        $("body").removeClass(scheme);
+        $("body").addClass("wp-theme-3");
+        checkAsideMenuVisibility();
+        $.cookie('scheme', 'wp-theme-3', { expires:date});
+        scheme = "wp-theme-3";
+    });
+</script>
 </body>
 </html>
